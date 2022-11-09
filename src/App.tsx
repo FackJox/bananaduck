@@ -6,7 +6,7 @@ import { useGLTF, Environment } from "@react-three/drei";
 import Banana from "./components/Banana";
 import { EffectComposer, DepthOfField } from "@react-three/postprocessing";
 
-type AppProps = {
+interface AppProps {
   count: number;
   depth: number;
 };
