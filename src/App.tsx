@@ -6,12 +6,16 @@ import { useGLTF, Environment } from "@react-three/drei";
 import Banana from "./components/Banana";
 import { EffectComposer, DepthOfField } from "@react-three/postprocessing";
 
-interface AppProps {
+type AppProps = {
   count: number;
   depth: number;
 };
 
-export default function App({ count = 150, depth = 100 }: AppProps) {
+export default function App() {
+
+  const count = 150
+    const depth = 100
+    
   return (
     <Canvas gl={{ alpha: false }} camera={{ near: 0.01, far: 110, fov: 30 }}>
       <color attach="background" args={["#ffe07c"]} />
